@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Qillqa</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="part1">
+          <div class="listaMenu">
+            <ul>
+              <li class="select"><a href="index.html">Inicio</a></li>
+              <li><a href="autores.html">Autores</a></li>
+              <li><a href="categorias.html">Categorias</a></li>
+              <li><a href="#">P. Externa</a></li>
+              <li>
+                <button><img src="img/menu-movil.svg" alt="" /></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+        </div>
+        <div class="part2">
+          <div class="listaEcommerce">
+            <ul>
+              <li>
+                <button class="btnBuscador">
+                  <img src="img/lupa.svg" alt="" />
+                </button>
+              </li>
+              <li>
+                <a href="login.html" class="login">Login</a>
+              </li>
+              <li>
+                <a href="carrito.html" class="carrito"
+                  ><span>5</span><img src="img/carrito.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="buscador">
+        <div class="container">
+          <form action="resultados.html">
+            <div class="form-group">
+              <input
+                size="40"
+                class="form-input required"
+                id="nombre"
+                type="text"
+                name="nombre"
+                placeholder="Escribe lo que buscas aquí"
+              />
+            </div>
+            <button type="submit"></button>
+          </form>
+          <div class="autoresBusqueda">
+            <div class="title">
+              <span>Autores</span>
+              <h2>Creadores de Historias</h2>
+              <div class="autores">
+                <div class="item">
+                  <button>
+                    <img src="img/autor1.jpg" alt="" />
+                    <h3>José Carlos Mariategui</h3>
+                  </button>
+                </div>
+                <div class="item">
+                  <button>
+                    <img src="img/autor2.jpg" alt="" />
+                    <h3>Abraham Valdelomar</h3>
+                  </button>
+                </div>
+                <div class="item">
+                  <button>
+                    <img src="img/autor3.jpg" alt="" />
+                    <h3>Manuel Gonzales Prada</h3>
+                  </button>
+                </div>
+                <div class="item">
+                  <button>
+                    <img src="img/autor4.jpg" alt="" />
+                    <h3>Ricardo Palma</h3>
+                  </button>
+                </div>
+                <div class="item">
+                  <button>
+                    <img src="img/autor5.jpg" alt="" />
+                    <h3>Sebastian Salazar Bondy</h3>
+                  </button>
+                </div>
+              </div>
+              <button class="vermas">Ver más</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bannerHome">
+        <div class="swiper mybannerHome">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="filtro"></div>
+              <img src="img/bannerhome1.jpg" alt="" />
+              <div class="container">
+                <h2>Tu biblioteca Virtual</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="filtro"></div>
+              <img src="img/bannerhome1.jpg" alt="" />
+              <div class="container">
+                <h2>Tu biblioteca Virtual</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="filtro"></div>
+              <img src="img/bannerhome1.jpg" alt="" />
+              <div class="container">
+                <h2>Tu biblioteca Virtual</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="nuevoslanzamientos">
+        <div class="container">
+          <div class="title">
+            <span>Novedades</span>
+            <h2>Nuevos Lanzamientos</h2>
+          </div>
+          <div class="listaNovedadres">
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura1.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Siete ensayos de interpretación de la realidad peruana</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura2.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Cuentos Completos</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura3.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Horas de Lucha</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura4.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Páginas Libres</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura5.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Tradiciones Peruanas</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categorias">
+        <div class="container">
+          <div class="title">
+            <span>Nuestros Libros</span>
+            <h2>Que nunca te cances de leer</h2>
+          </div>
+          <div class="ListaCategorias">
+            <div class="swiper swipercategorias">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <button data-category="Todos" class="todos">Todos</button>
+                </div>
+                <div class="swiper-slide">
+                  <button
+                    data-category="NarrativaPeruana"
+                    class="NarrativaPeruana"
+                  >
+                    Narrativa Peruana
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button
+                    data-category="NovelaRomantica"
+                    class="NovelaRomantica"
+                  >
+                    Novela Romántica
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button data-category="Juvenil" class="Juvenil">
+                    Juvenil
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button
+                    data-category="NarrativaLatinoamericana"
+                    class="NarrativaLatinoamericana"
+                  >
+                    Narrativa Latinoamericana
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button data-category="Ficción" class="Ficción">
+                    Ficción
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button data-category="Terror" class="Terror">Terror</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="ListaLibros">
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura1.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Siete ensayos de interpretación de la realidad peruana</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura2.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Cuentos Completos</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura3.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Horas de Lucha</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura4.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Páginas Libres</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura5.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Tradiciones Peruanas</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura6.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Siete ensayos de interpretación de la realidad peruana</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura7.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Cuentos Completos</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura8.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Horas de Lucha</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura9.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Páginas Libres</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura10.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Tradiciones Peruanas</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura11.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Siete ensayos de interpretación de la realidad peruana</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura12.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Cuentos Completos</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura13.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Horas de Lucha</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura14.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Páginas Libres</h3>
+            </div>
+            <div class="itemArticulo">
+              <a href="libro-interna.html"></a>
+              <button class="addCarrito">+</button>
+              <img src="img/figura15.jpg" alt="" />
+              <div>
+                <span class="original">S/59.00</span>
+                <span class="descuento">S/55.00</span>
+              </div>
+              <h3>Tradiciones Peruanas</h3>
+            </div>
+          </div>
+          <button class="btnMas">Ver más</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="part1">
+          <div class="info">
+            <a href="index.html">
+              <img src="img/logo-info.png" alt="" />
+            </a>
+            <div>
+              <h3>Escríbenos</h3>
+              <p>contacto@qillqa.com</p>
+              <div>
+                <p>Teléfono: +51 987654321</p>
+                <p>Direccion Aqui</p>
+              </div>
+            </div>
+          </div>
+          <div class="redes">
+            <a href="#"><img src="img/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-instagram.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-linkedin.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-youtube.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-whatsapp.svg" alt="" /></a>
+          </div>
+          <div class="derechos">
+            <p>QILLQA - ©2023 Todos los derechos reservados</p>
+          </div>
+        </div>
+        <div class="part2">
+          <h2>Pública con Nosotros</h2>
+          <div class="formulario">
+            <form action="">
+              <fieldset>
+                <div class="form-group">
+                  <label for="nombre">Déjanos tu nombre o Razón Social</label>
+                  <input
+                    size="40"
+                    class="form-input required"
+                    id="nombre"
+                    type="text"
+                    name="nombre"
+                  />
+                </div>
+                <div class="form-column">
+                  <div class="form-group">
+                    <label for="email">Ahora tu correo</label>
+                    <input
+                      size="40"
+                      class="form-input required"
+                      id="email"
+                      type="email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="form-group formselect">
+                    <label for="Razon">Razón</label>
+                    <div>
+                      <select name="Razon" id="Razon">
+                        <option value=""></option>
+                        <option value="Editorial">Editorial</option>
+                        <option value="Escritor">Escritor</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Mensaje">Déjanos tu nombre o Razón Social</label>
+                  <textarea
+                    name="Mensaje"
+                    id="Mensaje"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="btn-enviar">
+                  <button>
+                    Enviar <img src="img/flecha-roja.svg" alt="" />
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

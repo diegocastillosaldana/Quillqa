@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Qillqa</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="part1">
+          <div class="listaMenu">
+            <ul>
+              <li class="select"><a href="index.html">Inicio</a></li>
+              <li><a href="autores.html">Autores</a></li>
+              <li><a href="categorias.html">Categorias</a></li>
+              <li><a href="#">P. Externa</a></li>
+              <li>
+                <button><img src="img/menu-movil.svg" alt="" /></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+        </div>
+        <div class="part2">
+          <div class="listaEcommerce">
+            <ul>
+              <li>
+                <button class="btnBuscador">
+                  <img src="img/lupa.svg" alt="" />
+                </button>
+              </li>
+              <li>
+                <a href="login.html" class="login">Login</a>
+              </li>
+              <li>
+                <a href="carrito.html" class="carrito"
+                  ><span>5</span><img src="img/carrito.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="buscadorResultado">
+        <div class="container">
+          <form action="resultados.html">
+            <div class="form-group">
+              <input
+                size="40"
+                class="form-input required"
+                id="nombre"
+                type="text"
+                name="nombre"
+                placeholder="Escribe lo que buscas aquí"
+              />
+            </div>
+            <button type="submit"></button>
+          </form>
+          <div class="autoresBusqueda">
+            <div class="title">
+              <span>Autores</span>
+              <h2>Creadores de Historias</h2>
+            </div>
+            <div class="autores">
+              <div class="item">
+                <button>
+                  <img src="img/autor3.jpg" alt="" />
+                  <h3>José Carlos Mariategui</h3>
+                </button>
+              </div>
+              <div class="item">
+                <button>
+                  <img src="img/autor6.jpg" alt="" />
+                  <h3>Abraham Valdelomar</h3>
+                </button>
+              </div>
+              <div class="item">
+                <button>
+                  <img src="img/autor7.jpg" alt="" />
+                  <h3>Manuel Gonzales Prada</h3>
+                </button>
+              </div>
+              <div class="item">
+                <button>
+                  <img src="img/autor8.jpg" alt="" />
+                  <h3>Ricardo Palma</h3>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="librosBusqueda">
+            <div class="title">
+              <span>Libros</span>
+              <h2>Historias por descubrir</h2>
+            </div>
+            <div class="ListaCategorias">
+              <div class="swiper swipercategorias">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button data-category="Todos" class="todos">Todos</button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-category="NovelaRomantica"
+                      class="NovelaRomantica"
+                    >
+                      Habilidades Sociales
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button data-category="Juvenil" class="Juvenil">
+                      Novela Romántica
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-category="NarrativaLatinoamericana"
+                      class="NarrativaLatinoamericana"
+                    >
+                      Autoayuda
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="ListaLibros">
+              <div class="itemArticulo">
+                <a href="libro-interna.html"></a>
+                <button class="addCarrito">+</button>
+                <img src="img/figura16.jpg" alt="" />
+                <div>
+                  <span class="original">S/79.00</span>
+                  <span class="descuento">S/75.00</span>
+                </div>
+                <h3>El mal acecha</h3>
+              </div>
+              <div class="itemArticulo">
+                <a href="libro-interna.html"></a>
+                <button class="addCarrito">+</button>
+                <img src="img/figura17.jpg" alt="" />
+                <div>
+                  <span class="original">S/59.00</span>
+                  <span class="descuento">S/55.00</span>
+                </div>
+                <h3>Los siete marido de Evelyn Hugo</h3>
+              </div>
+              <div class="itemArticulo">
+                <a href="libro-interna.html"></a>
+                <button class="addCarrito">+</button>
+                <img src="img/figura18.jpg" alt="" />
+                <div>
+                  <span class="original">S/59.00</span>
+                  <span class="descuento">S/55.00</span>
+                </div>
+                <h3>Vivamos más y mejor</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="part1">
+          <div class="info">
+            <a href="index.html">
+              <img src="img/logo-info.png" alt="" />
+            </a>
+            <div>
+              <h3>Escríbenos</h3>
+              <p>contacto@qillqa.com</p>
+              <div>
+                <p>Teléfono: +51 987654321</p>
+                <p>Direccion Aqui</p>
+              </div>
+            </div>
+          </div>
+          <div class="redes">
+            <a href="#"><img src="img/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-instagram.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-linkedin.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-youtube.svg" alt="" /></a>
+            <a href="#"><img src="img/icon-whatsapp.svg" alt="" /></a>
+          </div>
+          <div class="derechos">
+            <p>QILLQA - ©2023 Todos los derechos reservados</p>
+          </div>
+        </div>
+        <div class="part2">
+          <h2>Pública con Nosotros</h2>
+          <div class="formulario">
+            <form action="">
+              <fieldset>
+                <div class="form-group">
+                  <label for="nombre">Déjanos tu nombre o Razón Social</label>
+                  <input
+                    size="40"
+                    class="form-input required"
+                    id="nombre"
+                    type="text"
+                    name="nombre"
+                  />
+                </div>
+                <div class="form-column">
+                  <div class="form-group">
+                    <label for="email">Ahora tu correo</label>
+                    <input
+                      size="40"
+                      class="form-input required"
+                      id="email"
+                      type="email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="form-group formselect">
+                    <label for="Razon">Razón</label>
+                    <div>
+                      <select name="Razon" id="Razon">
+                        <option value=""></option>
+                        <option value="Editorial">Editorial</option>
+                        <option value="Escritor">Escritor</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Mensaje">Déjanos tu nombre o Razón Social</label>
+                  <textarea
+                    name="Mensaje"
+                    id="Mensaje"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="btn-enviar">
+                  <button>
+                    Enviar <img src="img/flecha-roja.svg" alt="" />
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
