@@ -8,6 +8,11 @@
 :root {
   --color-verder: #005d6f;
 }
+
+body.scrollHidden{
+  overflow: hidden;
+}
+
 @font-face {
   font-family: AvertaStdLight;
   src: url("../fuente/AvertaStd-Light.ttf");

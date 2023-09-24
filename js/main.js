@@ -28,9 +28,16 @@ var swiper = new Swiper(".swipercategorias", {
 document.addEventListener("click", function (e) {
     if (e.target.closest("header .part2 ul li .btnBuscador")) {
         document.querySelector("section.buscador").classList.toggle("open");
-    } else if (e.target.closest("section.buscador")) {
-        document.querySelector("section.buscador").classList.add("open");
-    } else {
-        document.querySelector("section.buscador").classList.remove("open");
+        document.querySelector("body").classList.toggle("scrollHidden");
+    } 
+    if (e.target.closest(".itemAutor")) {
+        document.querySelector("section.popupAutor").classList.add("open");
+        document.querySelector("body").classList.add("scrollHidden");
+    }else if (e.target.closest("section.popupAutor .close")) {
+        document.querySelector("section.popupAutor").classList.toggle("open");
+        document.querySelector("body").classList.toggle("scrollHidden");
+        if (document.querySelector("section.buscador.open")) {
+            document.querySelector("body").classList.toggle("scrollHidden");
+        }
     }
 })
