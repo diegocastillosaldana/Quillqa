@@ -770,89 +770,89 @@ header .part1 ul li:last-child {
     width: 100%;
     height: 100%;
   }
-  .contentAutor {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    padding: 16px 24px;
-    grid-gap: 24px;
-    background-color: #fff;
-    overflow-y: auto;
-    overflow-x: hidden;
-    .close {
-      position: absolute;
-      right: 50px;
-      top: 38px;
-      cursor: pointer;
+}
+.contentAutor {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 16px 24px;
+  grid-gap: 24px;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .close {
+    position: absolute;
+    right: 50px;
+    top: 38px;
+    cursor: pointer;
+  }
+  .part1 {
+    width: 440px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 7px;
+    img {
+      width: 100%;
     }
-    .part1 {
-      width: 440px;
-      flex-shrink: 0;
-      overflow: hidden;
-      border-radius: 7px;
-      img {
-        width: 100%;
-      }
+  }
+  .part2 {
+    padding-top: 50px;
+    h2 {
+      color: #005d6f;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Avenir;
+      font-size: 40px;
+      font-weight: 750;
     }
-    .part2 {
-      padding-top: 50px;
-      h2 {
+    span {
+      color: #5cb1b8;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Avenir;
+      font-size: 14px;
+      font-weight: 400;
+      padding-top: 15px;
+      display: block;
+    }
+    p {
+      color: #005d6f;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Avenir;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 40px;
+    }
+    .recomendadosAutor {
+      margin-top: 40px;
+      width: 60%;
+      h3 {
         color: #005d6f;
         font-feature-settings: "clig" off, "liga" off;
         font-family: Avenir;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 750;
+        line-height: 120%;
       }
-      span {
-        color: #5cb1b8;
-        font-feature-settings: "clig" off, "liga" off;
-        font-family: Avenir;
-        font-size: 14px;
-        font-weight: 400;
-        padding-top: 15px;
-        display: block;
-      }
-      p {
-        color: #005d6f;
-        font-feature-settings: "clig" off, "liga" off;
-        font-family: Avenir;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
-        margin-top: 40px;
-      }
-      .recomendadosAutor {
-        margin-top: 40px;
-        width: 60%;
-        h3 {
-          color: #005d6f;
-          font-feature-settings: "clig" off, "liga" off;
-          font-family: Avenir;
-          font-size: 20px;
-          font-weight: 750;
-          line-height: 120%;
-        }
-        .libros {
-          margin-top: 30px;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-column-gap: 25px;
-          grid-row-gap: 30px;
-          .itemArticulo h3 {
-            font-size: 16px;
-          }
+      .libros {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 30px;
+        .itemArticulo h3 {
+          font-size: 16px;
         }
       }
-      .div {
+    }
+    .div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btnmas {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .btnmas {
-          display: flex;
-          margin-right: 50px;
-          img {
-            width: 50px;
-          }
+        margin-right: 50px;
+        img {
+          width: 50px;
         }
       }
     }
@@ -1168,10 +1168,10 @@ section.carritoMain {
       padding-bottom: 15px;
       .cadDatos {
         display: flex;
+        width: 421px;
         div {
           display: flex;
           justify-content: center;
-          margin: 0 12px;
           &:last-child {
             margin-right: 0;
           }
@@ -1182,7 +1182,7 @@ section.carritoMain {
         .cadPrecio,
         .cadTot,
         .cadCan {
-          width: 120px;
+          width: 33%;
         }
       }
       h3 {
@@ -1255,8 +1255,12 @@ section.carritoMain {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding-right: 29px;
-          width: 370px;
+          width: 421px;
+          div {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+          }
           span {
             color: #005d6f;
             text-align: center;
@@ -1264,6 +1268,48 @@ section.carritoMain {
             font-family: Avenir;
             font-size: 16px;
             font-weight: 400;
+          }
+          .contador {
+            border: 1px solid #005d6f;
+            width: auto;
+            padding: 27px 20px;
+            &:hover {
+              button {
+                opacity: 1;
+              }
+            }
+          }
+          input {
+            outline: none !important;
+            appearance: none;
+            border: none;
+            width: 50px;
+            -webkit-appearance: none;
+            text-align: center;
+            pointer-events: none;
+            border-style: none !important;
+            color: #005d6f;
+            text-align: center;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Avenir;
+            font-size: 16px;
+            font-weight: 400;
+          }
+          button {
+            color: #005d6f;
+            text-align: center;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Avenir;
+            font-size: 25px;
+            font-weight: 400;
+            border: none;
+            background: transparent;
+            opacity: 0;
+          }
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
           }
         }
       }
@@ -1291,6 +1337,7 @@ section.carritoMain {
         margin-bottom: 20px;
         p {
           margin-bottom: 0;
+          font-weight: 700;
         }
       }
       p {
@@ -1313,6 +1360,143 @@ section.carritoMain {
         font-weight: 600;
         background-color: #ffb532;
         padding: 12px 70px;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+section.loginMain {
+  overflow: hidden;
+  display: flex;
+  .part1,
+  .part2 {
+    width: 50%;
+  }
+  .part1 {
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+  .part2 {
+    padding: 60px 0;
+    padding-left: 120px;
+    padding-right: 115px;
+    .anuncioRegistro {
+      display: flex;
+      justify-content: flex-end;
+      justify-content: end;
+      p {
+        color: #005d6f;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Avenir;
+        font-size: 18px;
+        font-weight: 400;
+        a {
+          font-weight: 700;
+          color: #005d6f;
+          text-decoration-line: underline;
+        }
+      }
+    }
+    .title {
+      margin-top: 60px;
+      p {
+        color: #cd0033;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Avenir;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      h1 {
+        color: #005d6f;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Avenir;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+    .formulario {
+      label {
+        margin-bottom: 5px;
+      }
+      .form-group {
+        margin-bottom: 25px;
+      }
+      button {
+        width: 100%;
+        padding: 15px 0;
+        background-color: #ffb532;
+        color: #fff;
+        text-align: center;
+        font-family: Avenir;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    .lostPassword {
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      width: fit-content;
+      color: #005d6f;
+      font-family: Avenir;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration-line: underline;
+    }
+    .decoracion {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      color: #99e2e8;
+      font-size: 20px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 40%;
+        right: 40px;
+        height: 2px;
+        background-color: #99e2e8;
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+      }
+      &::after {
+        content: "";
+        width: 40%;
+        left: 40px;
+        height: 2px;
+        background-color: #99e2e8;
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+      }
+    }
+    .cuentaGoogle {
+      margin-top: 30px;
+      p {
+        color: #005d6f;
+        text-align: center;
+        font-family: Avenir;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      a {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
         width: fit-content;
       }
     }

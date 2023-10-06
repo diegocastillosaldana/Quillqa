@@ -37,10 +37,10 @@
                   <img src="img/lupa.svg" alt="" />
                 </button>
               </li>
-              <li>
+              <li class="select">
                 <a href="login.html" class="login">Login</a>
               </li>
-              <li class="select">
+              <li>
                 <a href="carrito.html" class="carrito"
                   ><span>5</span><img src="img/carrito.svg" alt=""
                 /></a>
@@ -183,130 +183,56 @@
           </div>
         </div>
       </section>
-      <section class="carritoMain">
-        <div class="container">
-          <div class="title">
-            <span>Carrito de Compras</span>
-            <h1>A un paso de empezar tu historia</h1>
-          </div>
+      <section class="loginMain">
+        <div class="part1">
+          <img src="img/img-login.jpg" alt="" />
+        </div>
+        <div class="part2">
           <div class="content">
-            <div class="cabecera">
-              <div class="cabProducto">
-                <h3>Producto</h3>
-              </div>
-              <div class="cadDatos">
-                <div class="cadPrecio">
-                  <h3>Precio</h3>
-                </div>
-                <div class="cadCan">
-                  <h3>Cantidad</h3>
-                </div>
-                <div class="cadTot">
-                  <h3>Total</h3>
-                </div>
-              </div>
+            <div class="anuncioRegistro">
+              <p>
+                ¿No estas registrado?
+                <a href="registro.html">Crea una cuenta</a>
+              </p>
             </div>
-            <div class="listaProductos">
-              <div class="item">
-                <div class="datosProducto part1">
-                  <img src="img/figura7.jpg" alt="" />
-                  <div class="info">
-                    <a href="libro-interna.html">
-                      <h3>Travesuras de la niña mala</h3>
-                    </a>
-                    <span>Mario Vargas Llosa</span>
-                    <div>
-                      <p>ISBN</p>
-                      <p>9789877254624</p>
-                    </div>
-                    <div class="btnEliminar">
-                      <button>Quitar</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="part2">
-                  <div class="precio">
-                    <span>S/ 55.00</span>
-                  </div>
-                  <div class="cantidad">
-                    <div class="contador">
-                      <button>-</button>
-                      <input
-                        type="number"
-                        name=""
-                        value="1"
-                        size="2"
-                        min="0"
-                        max=""
-                        step="1"
-                        placeholder=""
-                        inputmode="numeric"
-                        autocomplete="off"
-                      />
-                      <button>+</button>
-                    </div>
-                  </div>
-                  <div class="total">
-                    <span>S/ 55.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="datosProducto part1">
-                  <img src="img/figura8.jpg" alt="" />
-                  <div class="info">
-                    <a href="libro-interna.html">
-                      <h3>La ciudad y los perros</h3>
-                    </a>
-                    <span>Mario Vargas Llosa</span>
-                    <div>
-                      <p>ISBN</p>
-                      <p>9876513216873</p>
-                    </div>
-                    <div class="btnEliminar">
-                      <button>Quitar</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="part2">
-                  <div class="precio">
-                    <span>S/ 150.00</span>
-                  </div>
-                  <div class="cantidad">
-                    <div class="contador">
-                      <button>-</button>
-                      <input
-                        type="number"
-                        name=""
-                        value="2"
-                        size="2"
-                        min="0"
-                        max=""
-                        step="1"
-                        placeholder=""
-                        inputmode="numeric"
-                        autocomplete="off"
-                      />
-                      <button>+</button>
-                    </div>
-                  </div>
-                  <div class="total">
-                    <span>S/ 300.00</span>
-                  </div>
-                </div>
-              </div>
+            <div class="title">
+              <p>Bienvenido(a) de Vuelta</p>
+              <h1>Ingresa con tu cuenta</h1>
             </div>
-            <div class="totalCost">
-              <div class="content">
-                <div class="calculo">
-                  <p>Subtotal</p>
-                  <p class="costo">S/ 355.00</p>
-                </div>
-                <p>
-                  Los gastos de envío se Calculan en la <b>pantalla de pagos</b>
-                </p>
-                <a href="">Finalizar</a>
-              </div>
+            <div class="formulario">
+              <form action="">
+                <fieldset>
+                  <div class="form-group">
+                    <label for="Correo">Correo</label>
+                    <input
+                      type="text"
+                      id="Correo"
+                      name="Correo"
+                      placeholder="Correo aqui"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="Contraseña">Contraseña</label>
+                    <input
+                      type="password"
+                      id="Contraseña"
+                      name="Contraseña"
+                      placeholder="Ingresa tu contraseña"
+                      required
+                    />
+                  </div>
+                  <button type="submit">Ingresar</button>
+                </fieldset>
+              </form>
+            </div>
+            <a href="olvidaste-contraseña.html" class="lostPassword"
+              >¿Olvidaste tu contraseña?</a
+            >
+            <div class="decoracion">o</div>
+            <div class="cuentaGoogle">
+              <p>Ingresar usando tu correo electrónico</p>
+              <a href="#"><img src="img/Gmail.svg" alt="" /></a>
             </div>
           </div>
         </div>
